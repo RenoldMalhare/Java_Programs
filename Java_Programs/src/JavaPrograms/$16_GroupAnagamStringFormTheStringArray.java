@@ -10,10 +10,11 @@ public class $16_GroupAnagamStringFormTheStringArray {
         HashMap<String, List<String>> map = new HashMap<>();
         String ar[] = {"eat", "tea", "tan", "ate", "nat", "bat"};
         for(int i=0; i<ar.length; i++){
+        	//sort the String
             char[] chars = ar[i].toCharArray();
             Arrays.sort(chars);
             String sorted = new String(chars);
-
+            //Create the ArrayList for group
             if(!map.containsKey(sorted)){
                 map.put(sorted, new ArrayList<>());
             }
